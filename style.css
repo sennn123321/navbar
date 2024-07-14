@@ -1,0 +1,158 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav div img {
+  width: 50px;
+  height: 50px;
+  border-radius: 75px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #444;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 350ms;
+  border-bottom: rgba(0, 0, 0, 0);
+}
+
+nav ul li a:hover {
+  border-bottom: 1px solid black;
+  color: rgb(10, 22, 156);
+}
+
+.menu-icon {
+  /* background-color: tomato; */
+  font-size: 24px;
+  display: none;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: xx-large;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 200;
+  font-size: smaller;
+}
+
+.home-bar a {
+  display: flex;
+  justify-content: center;
+  padding-top: 300px;
+  text-decoration: none;
+}
+
+.icon-wa {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+.icon-ig {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+.wa a {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  text-decoration: none;
+  color: green;
+}
+
+.ig a {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  text-decoration: none;
+  color: purple;
+}
+
+.k a {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  margin-top: 300px;
+}
+
+.ig a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.wa a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.k a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+.home-bar a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+}
+
+body {
+  background-color: #c5c2c2;
+}
